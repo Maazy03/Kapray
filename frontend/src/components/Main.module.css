@@ -1,0 +1,116 @@
+body{
+
+	font-family: 'Montserrat', sans-serif;
+	
+}
+.mainbody
+{
+	background-color:#1a1a1a;
+}
+.h1
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.btnwrapper{ text-align:center; position:absolute;bottom: 42%;left:44%; margin: 0 auto; width:auto;}
+
+.btnwrapper1
+{ text-align:center; position:absolute; bottom: 42%;left:44%;margin: 0 auto; width:auto
+}
+
+.hover,
+.hover1
+{
+	opacity: 1;
+	-webkit-transition: .5s ease-in-out;
+	transition: .4s ease-in-out;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.hover:hover
+{
+	opacity: 0.5;
+	background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+
+}
+.hover1:hover
+{
+	opacity:0.5;
+	background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+
+}
+.button{
+border-radius: 8px;
+border:2px solid black;
+height: 3rem;
+width: 12rem;
+background-color: #333333;
+align-items: center;
+
+
+}
+.button:hover{
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	z-index: 1;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
+.footer
+{
+    grid-area: footer;
+    background-color:#0f0f0f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+@media(max-width:730px)
+{
+	.btnwrapper{ text-align:center; position:absolute;bottom: 42%;left:40%; margin: 0 auto; width:auto;}
+	.btnwrapper1{ text-align:center; position:absolute;bottom: 42%;left:40%; margin: 0 auto; width:auto;}
+}
+
+
+@media(max-width:500px)
+{
+	.btnwrapper{ text-align:center; position:absolute;bottom: 42%;left:34%; margin: 0 auto; width:auto;}
+	.btnwrapper1{ text-align:center; position:absolute;bottom: 42%;left:34%; margin: 0 auto; width:auto;}
+	
+}
+
+@media(max-width:450px)
+{
+	.btnwrapper{ text-align:center; position:absolute;bottom: 42%;left:29%; margin: 0 auto; width:auto;}
+	.btnwrapper1{ text-align:center; position:absolute;bottom: 42%;left:29%; margin: 0 auto; width:auto;}
+}
+
+@media(max-width:1200px)
+{
+	.hover
+		{
+		width: 110%; 
+		margin-left: 8px;
+	}
+	.hover1
+{	width: 110%;
+	margin-left: 8px;
+}
+}
+
+@media(min-width:1240px)
+{
+	.hover1
+	{
+		position: relative;
+		left: 15px;
+	}
+
+}
