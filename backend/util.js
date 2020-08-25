@@ -42,4 +42,4 @@ const getToken = (user) => {
 //   return res.status(401).send({ message: 'Admin Token is not valid.' });
 // };
 
-// export { getToken, isAuth, isAdmin };
+ export { getToken };

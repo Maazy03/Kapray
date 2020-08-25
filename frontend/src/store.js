@@ -4,15 +4,20 @@ import thunk from 'redux-thunk';
 import productListReducer,{productDetailsReducer} from './reducers/productReducers'
 import { CartReducer } from './reducers/cartReducers';
 import Cookie from "js-cookie";
-import { userSigninReducer } from './reducers/userReducers'
+import { userSigninReducer,userRegisterReducer } from './reducers/userReducers'
 
 const cartItems=Cookie.getJSON("cartItems") || [];
-const initialState ={ cart:{cartItems}}
+const userInfo=Cookie.getJSON("userInfo") || null;
+
+const initialState ={ cart:{cartItems},userSignin: {userInfo} }
+
+
 const reducer = combineReducers({
     productList:productListReducer,
     productDetails:productDetailsReducer,
     cart:CartReducer,
-    userSignin:userSigninReducer
+    userSignin:userSigninReducer,
+    userRegister:userRegisterReducer
 
 })
 

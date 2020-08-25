@@ -10,7 +10,8 @@ function SignIn(props) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const userSignin = useSelector(state => state.userSignin)
-    const { loading, userInfo, error } = userSignin
+    console.log(userSignin)
+    const { loading, userInfo, error } = userSignin;
     const dispatch = useDispatch();
        
 useEffect(() => {
@@ -27,7 +28,7 @@ useEffect(() => {
        event.preventDefault();
         dispatch(signin(email, password))
     }
-
+console.log("hello1213",userInfo)
     return (
 
         <div style={{ marginTop: "6rem" }} >

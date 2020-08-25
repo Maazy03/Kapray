@@ -3,7 +3,7 @@ import data from './data';
 import config from './config';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose'
-import userRoute from './routes/userRoute'
+import router from './routes/userRoute'
 import bodyParser from 'body-parser'
 dotenv.config();
 const mongodbUrl = config.MONGODB_URL;
@@ -17,7 +17,7 @@ mongoose.connect(mongodbUrl,
         useCreateIndex:true
     }).catch(error=>console.log(error.reason))
     
-app.use("/api/users",userRoute)
+app.use("/api/users",router)
 app.get("/api/products/:id",(req,res)=>
 {
      
@@ -26,7 +26,7 @@ app.get("/api/products/:id",(req,res)=>
     if(product)
     res.send(product)
     else
-    res.status(401).send({msg:"$)$ PRODUCT NOT FOUND"})
+    res.status(401).send({msg:"$)                                                                                                                              $ PRODUCT NOT FOUND"})
 })
 
 
